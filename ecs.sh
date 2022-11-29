@@ -11,7 +11,7 @@ IMAGE_NAME=204252935480.dkr.ecr.us-east-1.amazonaws.com/react-jenkins:latest
 #sleep 20
 whoami
 echo "Deploying to Service"
-#ecs-deploy -c $ECS_CLUSTER -n $SERVICE_NAME -i $IMAGE_NAME -t 300 --max-definitions 10
-aws ecs update-service --cluster Jenkins  --service jenkins-service --task-definition jenkince-task 
+ecs-deploy -c $ECS_CLUSTER -n $SERVICE_NAME -i $IMAGE_NAME -t 300 --max-definitions 10
+#aws ecs update-service --cluster Jenkins  --service jenkins-service --task-definition jenkince-task 
 #}
 #deploy
