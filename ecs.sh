@@ -6,8 +6,8 @@ ECS_CLUSTER=Jenkins
 IMAGE_NAME=204252935480.dkr.ecr.us-east-1.amazonaws.com/react-jenkins:latest
 
 #deploy () {
-#0install add jq https://apps.0install.net/utils/jq.xml
-#export PATH=/var/lib/jenkins/bin:$PATH
+0install add jq https://apps.0install.net/utils/jq.xml
+export PATH=/var/lib/jenkins/bin:$PATH
 #sleep 20
 whoami
 echo "Deploying to Service"
